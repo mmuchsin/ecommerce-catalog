@@ -261,7 +261,7 @@ Recommended extensions:
 
 ## 👤 Contributor
 
-**Muchsin M.**
+**Muchsin**
 [GitHub](https://github.com/mmuchsin)
 
 ---
