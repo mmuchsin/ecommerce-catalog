@@ -93,9 +93,9 @@ When you push to `main`, GitHub Actions will:
 1. Install dependencies
 2. Run ESLint, Vitest, and Playwright tests
 3. Build the project
-4. Deploy automatically to **GitHub Pages**
+4. Deploy automatically to **Netlify**
 
-> 🧩 The workflow file lives at `.github/workflows/deploy.yml`.
+> 🧩 The workflow file lives at `.github/workflows/ci.yml`.
 
 ---
 
@@ -162,7 +162,7 @@ When you push to `main`, GitHub Actions will:
    ```
 5. Open a Pull Request to `dev`
 6. Merge to `stage` (optional demo)
-7. Merge to `main` → auto-deploy to GitHub Pages
+7. Merge to `main` → auto-deploy to Netlify
 
 ### Conventional Commit Examples
 
@@ -249,7 +249,7 @@ Recommended extensions:
 | Build Tool | Vite                               |
 | Testing    | Vitest, Vue Test Utils, Playwright |
 | CI/CD      | GitHub Actions                     |
-| Deployment | GitHub Pages                       |
+| Deployment | Netlify                       |
 
 ---
 
