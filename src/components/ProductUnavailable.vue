@@ -1,7 +1,4 @@
 <script setup lang="ts">
-// No changes needed here
-import sadFace from '@/assets/img/sad-face.svg';
-
 const emit = defineEmits(['next-product']);
 </script>
 

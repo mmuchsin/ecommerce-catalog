@@ -5,9 +5,10 @@ import { useProduct } from '@/composables/useProduct'
 import ProductDisplay from '@/components/ProductDisplay.vue'
 import ProductUnavailable from '@/components/ProductUnavailable.vue'
 import LoadingSpinner from '@/components/LoadingSpinner.vue'
+import type { Product } from '@/types/product'
 
 const productId = ref(1)
-const { product, loading, error } = useProduct(productId)
+const { product, loading } = useProduct(productId)
 
 function fetchNextProduct() {
     if (productId.value >= 20) {
@@ -17,7 +18,7 @@ function fetchNextProduct() {
 
 }
 
-const isProductAvailable = (product: any) => {
+const isProductAvailable = (product: Product | null) => {
     return (
         product &&
         (product.category === "men's clothing" ||
