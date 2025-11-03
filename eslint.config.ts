@@ -24,6 +24,11 @@ export default defineConfigWithVueTs(
   {
     ...pluginVitest.configs.recommended,
     files: ['src/**/__tests__/*'],
+    
+    // ADDITION 1: Allow 'any' in test files for mocking external libraries
+    rules: {
+        '@typescript-eslint/no-explicit-any': 'off', 
+    }
   },
   
   {
