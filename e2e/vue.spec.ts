@@ -133,7 +133,7 @@ test.describe('Product Explorer E2E Flow', () => {
 
         // ASSERT 3: Recovery is successful (New successful product loads)
         await expect(page.getByRole('heading', { name: MOCK_PRODUCT_2.title })).toBeVisible();
-        await expect(page.getByText('This product is unavailable to show')).not.toBeVisible();
+        await expect(page.getByText('This product is unavailable to show')).toBeHidden();
         
         // ASSERT 4: Theme is restored (Women's Light Pink/Magenta)
         await expect(pageBody).toHaveCSS('background', /rgb\(253, 226, 255\)/); // --color-pink-light
